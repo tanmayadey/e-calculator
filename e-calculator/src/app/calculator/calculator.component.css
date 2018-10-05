@@ -1,0 +1,212 @@
+body {
+  background:#e2e2e2;
+}
+
+#background {
+    width:280px;
+    height:410px;
+    background:#f9f6f6;
+    margin:50px auto;
+    border: 2px solid #e2e2e2;
+    border:1px thin black;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px;
+    
+}
+
+button {
+    border:0;
+    color:#fff;
+}
+
+#result {
+    display:block;
+    font-family: sans-serif;
+    width:230px;
+    height:40px;
+    margin:10px auto;
+    text-align: right;
+    border:0;
+    background:#3b3535;
+    color:#fff;
+    padding-top:20px;
+    font-size:20px;
+    margin-left: 25px;
+    outline: none;
+    overflow: hidden;
+    letter-spacing: 4px;
+    position: relative;
+    top:10px;
+}
+
+#result:hover {
+    
+    cursor: text;
+    
+}
+
+#first-rows {
+    margin-bottom: 20px;
+    position: relative;
+    top:10px;
+}
+
+.rows {
+    width:280px;
+    margin-top:10px;
+}
+.input-div{
+	margin-left: 10px;
+    font-size: 23px;
+    font-weight: lighter;
+    height: 35Px;
+    margin-top: 8px;
+}
+.result_div {
+    width: 280px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    -ms-flex-line-pack: right;
+    align-content: right;
+    text-align: right;
+    font-size: 18px;
+    border: 1px thin black;
+    border-top: 1px solid gray;
+    overflow-y:auto;
+}
+.result_div span{
+	margin-right: 20px;
+}
+.last-rows {
+	width:300px;
+    margin-top:10px;
+    margin-bottom: 40px;
+}
+
+#delete {
+    width: 114px;
+    height: 50px;
+    margin-left: 25px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Aligning the division and dot button properly */
+.fall-back {
+    margin-left:3px !important;
+}
+
+/* Aligning the addition and equals to button properly */
+.align {
+    margin-left: 6px !important;
+}
+
+/* Button styling */
+.btn-style {
+    width:50px;
+    height:50px;
+    margin-left:5px;
+    border-radius:4px;
+    text-align: center;
+}
+
+.eqn {
+    width:50px;
+    height:50px;
+    margin-left:5px;
+    border-radius:4px;
+}
+
+.first-child {
+ margin-left:25px;
+}
+
+
+/* Adding background color to the number values */
+ .num-bg {
+    background: #e6e2e2;
+    color: #0c0c0c;
+    font-size: 26px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #0e0e0e;
+}
+
+ .num-bg:active {
+    background:#000;
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+    outline:none;
+    box-shadow: inset 5px 5px 5px #555;
+}
+
+/*Adding background color to the operator values */ 
+.opera-bg {
+    background: #e6e2e2;
+    color: #131212;
+    font-size: 26px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #555;
+}
+
+.opera-bg:active {
+    background:#333;
+    color:#fff;
+    font-size:26px;
+    cursor: pointer;
+    outline:none;
+    box-shadow: inset 4px 4px 4px #555;
+}
+
+/*Adding a background color to the delete button */
+.del-bg {
+    background: #e6e6e5;
+    color: #ff0000;
+    font-size: 26px;
+    cursor: pointer;
+    outline: thin;
+    border: 1px solid #151414;
+}
+
+.del-bg:active {
+    background:#24b4de;
+    color:#fff;
+    font-size:26px;
+    cursor: pointer;
+    outline:none;
+    box-shadow: inset 4px 4px 4px #399cb9;
+}
+
+/*Adding a background color to the equals to button */
+#eqn-bg {
+    background: #161716;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid #eaf1eb;
+}
+
+#eqn-bg:active {
+    background:#17a928;
+    color:#fff;
+    font-size:26px;
+    cursor: pointer;
+    outline:none;
+    box-shadow: inset 4px 4px 4px #1f7a29;
+}
+
+@-webkit-keyframes bgChange {
+    0% {
+       background:#aba6a6; 
+    }
+    
+    50% {
+      background:#797676;
+    }
+    
+    100% {
+        background:#a58080;
+    }
+}

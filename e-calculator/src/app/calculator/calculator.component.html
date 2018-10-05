@@ -1,0 +1,57 @@
+<h4 style="color: red">
+<ul>
+<li>(%)Function yet to implement!</li>
+<li>only 15 digit input (length) allowed! (*including operator (+,-,*,/))</li>
+<li>if input itself 15 digit then no operator will work , you have to clear (press 'C') and again start </li>
+</ul>
+
+</h4>
+
+<div id="background"><!-- Main background -->
+             
+        <div class = "input-div">
+        {{inputVal}}
+        <br/><br/>
+        
+        </div>
+             <div class="result_div"><span>{{resultVal}}</span> </div>
+         <div id="main">
+             <div id="rows">
+              <button class="del-bg" id="delete" (click)="clear()">C</button>
+                 <button value="%" class="btn-style operator opera-bg fall-back" >%</button>
+                 <button value="+" class="btn-style opera-bg value align operator" (click)="getValue('+','opt')">+</button>
+                 </div>
+                 
+               <div class="rows">
+               
+				 <button  name ="numbutton7"  (click)="getValue(7,'num')" class="btn-style num-bg num first-child">7</button>
+                 <button name ="numbutton8"    (click)="getValue(8,'num')" class="btn-style num-bg num">8</button>
+                 <button name ="numbutton9"    (click)="getValue(9,'num')" class="btn-style num-bg num" >9</button>
+                 <button  value="-" class="btn-style opera-bg operator" (click)="getValue('-','opt')">-</button>
+                 </div>
+                 
+                 <div class="rows">
+                 <button name ="numbutton4"   (click)="getValue(4,'num')" class="btn-style num-bg num first-child" >4</button>
+                 <button name ="numbutton5"   (click)="getValue(5,'num')" class="btn-style num-bg num" >5</button>
+                 <button name ="numbutton6"  (click)="getValue(6,'num')"  class="btn-style num-bg num" >6</button>
+                 <button value="*" class="btn-style opera-bg operator" (click)="getValue('*','opt')">x</button>
+                 </div>
+                 
+                 <div class="rows">
+                 <button name ="numbutton1"   (click)="getValue(1,'num')" class="btn-style num-bg num first-child" >1</button>
+                 <button name ="numbutton2"  (click)="getValue(2,'num')" class="btn-style num-bg num" >2</button>
+                 <button name ="numbutton3"   (click)="getValue(3,'num')" class="btn-style num-bg num" >3</button>
+                 <button value="/" class="btn-style opera-bg operator" (click)="getValue('/','opt')">/</button>
+                 </div>
+                 
+                 <div class="last-rows">
+                 <button name ="numbutton0"   (click)="getValue(0,'num')"  class="num-bg zero" id="delete" >0</button>
+                 
+                 <button name ="numbuttonPoint"   (click)="getValue('.','num')" class="btn-style num-bg period fall-back" >.</button>
+                 <button value="=" id="eqn-bg" class="eqn align" (click)="finalCal()">=</button>
+                 </div>
+                
+             </div>
+         
+         </div>
+        
